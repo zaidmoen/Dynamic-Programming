@@ -20,15 +20,15 @@ time/space complexity notes.
 
 | Topic | Core idea | Complexity | Implementation |
 |---|---|---:|---|
-| 0/1 Knapsack | Choose the best-value item set within a capacity | O(n × capacity) | [\x60knapsack.py\x60](knapsack/knapsack.py) |
-| Divide & Conquer | Split, solve smaller parts, and combine | O(n log n) for merge sort | [\x60divide_and_conquer.py\x60](divide_and_conquer/divide_and_conquer.py) |
-| Binary Search Tree | Store ordered values for efficient lookup | O(h) average operation | [\x60binary_search_tree.py\x60](trees/binary_search_tree.py) |
-| Longest Common Subsequence | Find the longest ordered match | O(m × n) | [\x60lcs.py\x60](longest_common_subsequence/lcs.py) |
-| Coin Change | Minimize coins or count combinations | O(amount × coins) | [\x60coin_change.py\x60](coin_change/coin_change.py) |
+| 0/1 Knapsack | Choose the best-value item set within a capacity | O(n × capacity) | [`knapsack.py`](knapsack/knapsack.py) |
+| Divide & Conquer | Split, solve smaller parts, and combine | O(n log n) for merge sort | [`divide_and_conquer.py`](divide_and_conquer/divide_and_conquer.py) |
+| Binary Search Tree | Store ordered values for efficient lookup | O(h) average operation | [`binary_search_tree.py`](trees/binary_search_tree.py) |
+| Longest Common Subsequence | Find the longest ordered match | O(m × n) | [`lcs.py`](longest_common_subsequence/lcs.py) |
+| Coin Change | Minimize coins or count combinations | O(amount × coins) | [`coin_change.py`](coin_change/coin_change.py) |
 
 ## How Dynamic Programming Works
 
-\x60\x60\x60mermaid
+```mermaid
 flowchart TD
     A[Start with a problem] --> B{Repeated subproblems?}
     B -- No --> C[Use another technique]
@@ -38,14 +38,14 @@ flowchart TD
     E --> F[Build a recurrence]
     F --> G[Memoization or tabulation]
     G --> H[Return the final state]
-\x60\x60\x60
+```
 
 Dynamic programming becomes useful when the same smaller problems appear
 repeatedly and their answers can be combined to solve the original problem.
 
 ## Repository Structure
 
-\x60\x60\x60text
+```text
 Dynamic-Programming/
 ├── knapsack/
 │   └── knapsack.py
@@ -58,13 +58,13 @@ Dynamic-Programming/
 ├── coin_change/
 │   └── coin_change.py
 └── README.md
-\x60\x60\x60
+```
 
 ## Run the Examples
 
 Clone the repository and run any topic directly:
 
-\x60\x60\x60bash
+```bash
 git clone https://github.com/zaidmoen/Dynamic-Programming.git
 cd Dynamic-Programming
 python knapsack/knapsack.py
@@ -72,7 +72,7 @@ python divide_and_conquer/divide_and_conquer.py
 python trees/binary_search_tree.py
 python longest_common_subsequence/lcs.py
 python coin_change/coin_change.py
-\x60\x60\x60
+```
 
 No external packages are required.
 
